@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="content-hero motion-surface">
+    <h1>Contact</h1>
+    <p>
+        We care about your schedule and your project quality. Reach out and we will
+        respond quickly with practical guidance.
+    </p>
+    <div class="hero-actions">
+        <a class="cta-primary" href="tel:+18015550100">Call Now</a>
+        <a class="cta-ghost" href="mailto:info@forshor.com">Email Team</a>
+    </div>
+</section>
+
+<section class="content-card-grid">
+    <article class="content-card">
+        <h2>Headquarters</h2>
+        <p>215 Industrial Way, Salt Lake City, UT 84101</p>
+        <p>(801) 555-0100</p>
+    </article>
+    <article class="content-card">
+        <h2>Dispatch</h2>
+        <p>dispatch@forshor.com</p>
+        <p>Open Mon-Sat, 6:00 AM to 6:00 PM</p>
+    </article>
+</section>
+
+<section class="quote-section">
+    <div>
+        <h2>Request a Quote</h2>
+        <p>
+            Share what you need and we will respond quickly with practical options.
+        </p>
+        <a class="cta-inline" href="tel:+18015550100">Need It Fast? Call Now</a>
+    </div>
+    <form class="quote-form" method="post" action="/api/leads/form">
+        <label>Name
+            <input required type="text" name="name" />
+        </label>
+        <label>Company
+            <input required type="text" name="company" />
+        </label>
+        <label>Phone
+            <input required type="tel" name="phone" />
+        </label>
+        <label>What Do You Need?
+            <textarea required name="details" rows="4"></textarea>
+        </label>
+        <button type="submit">Send Request</button>
+    </form>
+</section>
+{% endblock %}

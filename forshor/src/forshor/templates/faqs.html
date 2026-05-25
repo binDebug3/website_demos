@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="content-hero motion-surface">
+    <h1>Frequently Asked Questions</h1>
+    <p>
+        Answers to common contractor questions. Placeholder content below can be
+        replaced with finalized guidance.
+    </p>
+</section>
+
+<section class="faq-list">
+    {% for entry in faqs %}
+    <article class="faq-card reveal">
+        <h2>{{ entry.question }}</h2>
+        <p>{{ entry.answer }}</p>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

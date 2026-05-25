@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="content-hero motion-surface">
+    <h1>Utah Locations</h1>
+    <p>
+        Every location is focused on fast turnaround and consistent customer care.
+    </p>
+    <a class="cta-inline" href="tel:+18015550100">Call Nearest Location</a>
+</section>
+
+<section class="location-grid">
+    {% for location in locations %}
+    <article class="location-card reveal">
+        <h2>{{ location.city }}, {{ location.state }}</h2>
+        <p>{{ location.address }}</p>
+        <p><a href="tel:{{ location.phone }}">{{ location.phone }}</a></p>
+        <a class="text-link" href="/locations/{{ location.slug }}">View Location Details</a>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

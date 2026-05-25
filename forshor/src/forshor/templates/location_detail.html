@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if location %}
+<section class="content-hero motion-surface">
+    <h1>{{ location.city }}, {{ location.state }}</h1>
+    <p>{{ location.blurb }}</p>
+    <a class="cta-inline" href="tel:+18015550100">Call {{ location.city }} Team</a>
+</section>
+
+<section class="location-detail-grid">
+    <article class="placeholder-image">
+        <p>Location Photo Placeholder</p>
+        <p>{{ location.image_path }}</p>
+    </article>
+    <article class="content-card">
+        <h2>Branch Contact</h2>
+        <p>{{ location.address }}</p>
+        <p><a href="tel:{{ location.phone }}">{{ location.phone }}</a></p>
+        <p><a href="mailto:{{ location.email }}">{{ location.email }}</a></p>
+    </article>
+</section>
+{% else %}
+<section class="content-hero motion-surface">
+    <h1>Location Not Found</h1>
+    <p>The requested branch could not be found. Please select a valid location below.</p>
+    <a class="cta-inline" href="/locations">View Locations</a>
+</section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="content-hero motion-surface">
+    <h1>Products and Equipment</h1>
+    <p>
+        Popular tools and systems contractors ask for most often.
+    </p>
+    <a class="cta-inline" href="tel:+18015550100">Call About Inventory</a>
+</section>
+
+<section class="products-layout">
+    <aside class="product-sidebar">
+        <h2>Popular Products</h2>
+        <ul>
+            {% for product in products %}
+            <li>
+                <a href="/products?item={{ product.slug }}" data-preserve-products-scroll="true">{{ product.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </aside>
+
+    <article class="product-detail">
+        <h2>{{ selected_product.name }}</h2>
+        <div class="placeholder-image compact">
+            <p>Product Image Placeholder</p>
+            <p>{{ selected_product.image_path }}</p>
+        </div>
+        <p>{{ selected_product.description }}</p>
+        <a class="cta-inline" href="tel:+18015550100">Call Now for This Item</a>
+    </article>
+</section>
+{% endblock %}
