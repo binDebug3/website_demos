@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Point this exactly to the folder containing your index.html
-          path: 'forshor/src/forshor/templates/'
+          path: 'forshor/'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
