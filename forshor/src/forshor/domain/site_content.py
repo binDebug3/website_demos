@@ -12,7 +12,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "address": "215 Industrial Way, Salt Lake City, UT 84101",
         "phone": "(801) 555-1101",
         "email": "slc@forshor.com",
-        "image_path": "/static/images/locations/salt-lake-city-ut.jpg",
+        "image_path": "static/images/locations/salt-lake-city-ut.jpg",
         "blurb": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at lectus "
             "velit. For Shor supports downtown and valley concrete projects with rapid "
@@ -26,7 +26,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "address": "480 Builder Park Rd, Provo, UT 84601",
         "phone": "(801) 555-1173",
         "email": "provo@forshor.com",
-        "image_path": "/static/images/locations/provo-ut.jpg",
+        "image_path": "static/images/locations/provo-ut.jpg",
         "blurb": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, "
             "nisl quis malesuada feugiat, nibh massa interdum neque, in tempor felis "
@@ -40,7 +40,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "address": "92 Steel Frame Dr, Ogden, UT 84401",
         "phone": "(801) 555-1190",
         "email": "ogden@forshor.com",
-        "image_path": "/static/images/locations/ogden-ut.jpg",
+        "image_path": "static/images/locations/ogden-ut.jpg",
         "blurb": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut ante "
             "et lorem iaculis bibendum. Crews in Weber County rely on this branch for "
@@ -54,7 +54,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "address": "760 Red Rock Industrial, St. George, UT 84770",
         "phone": "(435) 555-1234",
         "email": "stgeorge@forshor.com",
-        "image_path": "/static/images/locations/st-george-ut.jpg",
+        "image_path": "static/images/locations/st-george-ut.jpg",
         "blurb": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius, "
             "orci at tempus lobortis, sapien risus cursus sem, et luctus nulla turpis "
@@ -68,7 +68,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "address": "34 North Yard Lane, Logan, UT 84321",
         "phone": "(435) 555-1267",
         "email": "logan@forshor.com",
-        "image_path": "/static/images/locations/logan-ut.jpg",
+        "image_path": "static/images/locations/logan-ut.jpg",
         "blurb": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id velit a "
             "ante condimentum rhoncus. The Logan team supports northern Utah pours with "
@@ -81,7 +81,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "rotary-hammer-pro-3200",
         "name": "Rotary Hammer Pro 3200",
-        "image_path": "/static/images/products/rotary-hammer-pro-3200.jpg",
+        "image_path": "static/images/products/rotary-hammer-pro-3200.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. High-impact "
             "concrete drilling and anchoring for dense structural work."
@@ -90,7 +90,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "cordless-rebar-cutter-rx",
         "name": "Cordless Rebar Cutter RX",
-        "image_path": "/static/images/products/cordless-rebar-cutter-rx.jpg",
+        "image_path": "static/images/products/cordless-rebar-cutter-rx.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Clean rebar cuts "
             "on active sites with reduced downtime."
@@ -99,7 +99,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "laser-level-xt-360",
         "name": "Laser Level XT 360",
-        "image_path": "/static/images/products/laser-level-xt-360.jpg",
+        "image_path": "static/images/products/laser-level-xt-360.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Precision "
             "alignment for forms, beams, and transfer lines."
@@ -108,7 +108,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "concrete-vibrator-maxvibe-18",
         "name": "Concrete Vibrator MaxVibe 18",
-        "image_path": "/static/images/products/concrete-vibrator-maxvibe-18.jpg",
+        "image_path": "static/images/products/concrete-vibrator-maxvibe-18.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consolidates "
             "concrete fast for cleaner finish quality."
@@ -117,7 +117,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "plate-compactor-ironstride",
         "name": "Plate Compactor IronStride",
-        "image_path": "/static/images/products/plate-compactor-ironstride.jpg",
+        "image_path": "static/images/products/plate-compactor-ironstride.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Delivers reliable "
             "base compaction for slabs and pathways."
@@ -126,7 +126,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "gas-cutoff-saw-blaze14",
         "name": "Gas Cut-Off Saw Blaze14",
-        "image_path": "/static/images/products/gas-cutoff-saw-blaze14.jpg",
+        "image_path": "static/images/products/gas-cutoff-saw-blaze14.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Built for cutting "
             "masonry, concrete, and steel edges."
@@ -135,7 +135,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "diamond-blade-ultracut",
         "name": "Diamond Blade UltraCut",
-        "image_path": "/static/images/products/diamond-blade-ultracut.jpg",
+        "image_path": "static/images/products/diamond-blade-ultracut.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Long-life blade "
             "for high-volume concrete cutting."
@@ -144,7 +144,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "form-tie-system-lockpoint",
         "name": "Form Tie System LockPoint",
-        "image_path": "/static/images/products/form-tie-system-lockpoint.jpg",
+        "image_path": "static/images/products/form-tie-system-lockpoint.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dependable form "
             "tension and straightforward setup."
@@ -153,7 +153,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "shoring-post-heavyline",
         "name": "Shoring Post HeavyLine",
-        "image_path": "/static/images/products/shoring-post-heavyline.jpg",
+        "image_path": "static/images/products/shoring-post-heavyline.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Heavy-load support "
             "for multi-stage pours."
@@ -162,7 +162,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "adjustable-screw-jack-aj500",
         "name": "Adjustable Screw Jack AJ500",
-        "image_path": "/static/images/products/adjustable-screw-jack-aj500.jpg",
+        "image_path": "static/images/products/adjustable-screw-jack-aj500.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fine elevation "
             "control for staging and shoring systems."
@@ -171,7 +171,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "epoxy-injection-kit-eik9",
         "name": "Epoxy Injection Kit EIK9",
-        "image_path": "/static/images/products/epoxy-injection-kit-eik9.jpg",
+        "image_path": "static/images/products/epoxy-injection-kit-eik9.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Structural crack "
             "repair support for challenging concrete repairs."
@@ -180,7 +180,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "surface-grinder-concreteedge",
         "name": "Surface Grinder ConcreteEdge",
-        "image_path": "/static/images/products/surface-grinder-concreteedge.jpg",
+        "image_path": "static/images/products/surface-grinder-concreteedge.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Efficient edge and "
             "slab prep before coatings or overlays."
@@ -189,7 +189,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "core-drill-rig-cd700",
         "name": "Core Drill Rig CD700",
-        "image_path": "/static/images/products/core-drill-rig-cd700.jpg",
+        "image_path": "static/images/products/core-drill-rig-cd700.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consistent core "
             "drilling through reinforced concrete."
@@ -198,7 +198,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "trowel-powerfinish-36",
         "name": "Trowel PowerFinish 36",
-        "image_path": "/static/images/products/trowel-powerfinish-36.jpg",
+        "image_path": "static/images/products/trowel-powerfinish-36.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Uniform slab "
             "finishing for commercial-grade surfaces."
@@ -207,7 +207,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "rebar-tier-quickbind",
         "name": "Rebar Tier QuickBind",
-        "image_path": "/static/images/products/rebar-tier-quickbind.jpg",
+        "image_path": "static/images/products/rebar-tier-quickbind.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fast and repeatable "
             "ties that reduce crew fatigue."
@@ -216,7 +216,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "generator-sitepower-8k",
         "name": "Generator SitePower 8K",
-        "image_path": "/static/images/products/generator-sitepower-8k.jpg",
+        "image_path": "static/images/products/generator-sitepower-8k.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stable temporary "
             "power for tools and lighting."
@@ -225,7 +225,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "wet-saw-stonestrip-12",
         "name": "Wet Saw StoneStrip 12",
-        "image_path": "/static/images/products/wet-saw-stonestrip-12.jpg",
+        "image_path": "static/images/products/wet-saw-stonestrip-12.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Clean precision "
             "cuts for block and stone materials."
@@ -234,7 +234,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "anchor-adhesive-bondguard",
         "name": "Anchor Adhesive BondGuard",
-        "image_path": "/static/images/products/anchor-adhesive-bondguard.jpg",
+        "image_path": "static/images/products/anchor-adhesive-bondguard.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Strong hold "
             "chemistry for critical anchoring applications."
@@ -243,7 +243,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "pump-sprayer-sealcoat-pro",
         "name": "Pump Sprayer SealCoat Pro",
-        "image_path": "/static/images/products/pump-sprayer-sealcoat-pro.jpg",
+        "image_path": "static/images/products/pump-sprayer-sealcoat-pro.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Even material "
             "distribution across large pour surfaces."
@@ -252,7 +252,7 @@ PRODUCT_ENTRIES: List[Dict[str, str]] = [
     {
         "slug": "jobsite-light-tower-vision360",
         "name": "Jobsite Light Tower Vision360",
-        "image_path": "/static/images/products/jobsite-light-tower-vision360.jpg",
+        "image_path": "static/images/products/jobsite-light-tower-vision360.jpg",
         "description": (
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reliable site "
             "illumination for early and late shifts."

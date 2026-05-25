@@ -93,7 +93,7 @@ class GalleryService:
                     item_id=index,
                     title=title,
                     category=category,
-                    image_path=f"/static/images/gallery/{image_path.name}",
+                    image_path=f"static/images/gallery/{image_path.name}",
                     alt_text=f"{category} project photo for {title}",
                 )
             )
