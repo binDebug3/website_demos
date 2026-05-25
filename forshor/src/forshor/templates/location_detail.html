@@ -5,7 +5,7 @@
 <section class="content-hero motion-surface">
     <h1>{{ location.city }}, {{ location.state }}</h1>
     <p>{{ location.blurb }}</p>
-    <a class="cta-inline" href="tel:+18015550100">Call {{ location.city }} Team</a>
+    <a class="cta-inline" href="{{ company_phone_href }}">Call {{ location.city }} Team</a>
 </section>
 
 <section class="location-detail-grid">
@@ -28,3 +28,4 @@
 </section>
 {% endif %}
 {% endblock %}
+

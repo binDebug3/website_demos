@@ -3,6 +3,7 @@ FastAPI application entrypoint.
 """
 
 import logging
+from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -16,6 +17,7 @@ from forshor.config import settings
 
 logging.basicConfig(level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 
 
 def create_app() -> FastAPI:
@@ -39,7 +41,7 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    app.mount("/static", StaticFiles(directory="src/forshor/static"), name="static")
+    app.mount("/static", StaticFiles(directory=PACKAGE_ROOT / "static"), name="static")
 
     app.include_router(pages_router)
     app.include_router(health_router)

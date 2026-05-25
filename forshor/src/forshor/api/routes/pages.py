@@ -3,6 +3,7 @@ Server-rendered page routes.
 """
 
 import logging
+from pathlib import Path
 
 from fastapi import APIRouter, Depends, Query, Request
 from fastapi.responses import HTMLResponse
@@ -22,7 +23,8 @@ from forshor.domain.site_content import (
 
 LOGGER = logging.getLogger(__name__)
 router = APIRouter(tags=["pages"])
-templates = Jinja2Templates(directory="src/forshor/templates")
+TEMPLATES_DIR = Path(__file__).resolve().parents[2] / "templates"
+templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 
 
 def _base_context(request: Request) -> dict[str, object]:
@@ -40,6 +42,8 @@ def _base_context(request: Request) -> dict[str, object]:
     return {
         "request": request,
         "app_name": settings.app_name,
+        "company_phone_display": settings.company_phone_display,
+        "company_phone_href": settings.company_phone_href,
         "locations": LOCATION_ENTRIES,
     }
 

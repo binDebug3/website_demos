@@ -141,7 +141,7 @@ def test_create_lead_via_json_without_formspree() -> None:
     payload = {
         "name": "Casey Foreman",
         "company": "Northline GC",
-        "phone": "555-0100",
+        "phone": "(801) 487-1656",
         "details": "Need form ties and release agent for Tuesday pour.",
     }
 
@@ -165,7 +165,7 @@ def test_create_lead_via_form_redirects() -> None:
     payload = {
         "name": "Jordan Builder",
         "company": "Solid Span",
-        "phone": "555-0123",
+        "phone": "(801) 487-1656",
         "details": "Need shore posts and slab accessories this week.",
     }
 

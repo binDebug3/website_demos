@@ -6,7 +6,7 @@
     <p>
         Popular tools and systems contractors ask for most often.
     </p>
-    <a class="cta-inline" href="tel:+18015550100">Call About Inventory</a>
+    <a class="cta-inline" href="{{ company_phone_href }}">Call About Inventory</a>
 </section>
 
 <section class="products-layout">
@@ -28,7 +28,8 @@
             <p>{{ selected_product.image_path }}</p>
         </div>
         <p>{{ selected_product.description }}</p>
-        <a class="cta-inline" href="tel:+18015550100">Call Now for This Item</a>
+        <a class="cta-inline" href="{{ company_phone_href }}">Call Now for This Item</a>
     </article>
 </section>
 {% endblock %}
+

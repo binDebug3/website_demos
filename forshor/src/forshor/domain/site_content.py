@@ -10,7 +10,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "city": "Salt Lake City",
         "state": "UT",
         "address": "215 Industrial Way, Salt Lake City, UT 84101",
-        "phone": "(801) 555-1101",
+        "phone": "(801) 487-1656",
         "email": "slc@forshor.com",
         "image_path": "static/images/locations/salt-lake-city-ut.jpg",
         "blurb": (
@@ -24,7 +24,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "city": "Provo",
         "state": "UT",
         "address": "480 Builder Park Rd, Provo, UT 84601",
-        "phone": "(801) 555-1173",
+        "phone": "(801) 487-1656",
         "email": "provo@forshor.com",
         "image_path": "static/images/locations/provo-ut.jpg",
         "blurb": (
@@ -38,7 +38,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "city": "Ogden",
         "state": "UT",
         "address": "92 Steel Frame Dr, Ogden, UT 84401",
-        "phone": "(801) 555-1190",
+        "phone": "(801) 487-1656",
         "email": "ogden@forshor.com",
         "image_path": "static/images/locations/ogden-ut.jpg",
         "blurb": (
@@ -52,7 +52,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "city": "St. George",
         "state": "UT",
         "address": "760 Red Rock Industrial, St. George, UT 84770",
-        "phone": "(435) 555-1234",
+        "phone": "(801) 487-1656",
         "email": "stgeorge@forshor.com",
         "image_path": "static/images/locations/st-george-ut.jpg",
         "blurb": (
@@ -66,7 +66,7 @@ LOCATION_ENTRIES: List[Dict[str, str]] = [
         "city": "Logan",
         "state": "UT",
         "address": "34 North Yard Lane, Logan, UT 84321",
-        "phone": "(435) 555-1267",
+        "phone": "(801) 487-1656",
         "email": "logan@forshor.com",
         "image_path": "static/images/locations/logan-ut.jpg",
         "blurb": (

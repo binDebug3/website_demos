@@ -58,7 +58,7 @@ def test_submit_lead_without_formspree_endpoint() -> None:
             payload=LeadCreate(
                 name="Alex",
                 company="Field Ops",
-                phone="555-0000",
+                phone="(801) 487-1656",
                 details="Need ties.",
             )
         )
@@ -83,7 +83,7 @@ def test_submit_lead_with_formspree_success() -> None:
             payload=LeadCreate(
                 name="Alex",
                 company="Field Ops",
-                phone="555-0000",
+                phone="(801) 487-1656",
                 details="Need ties.",
             ),
             client=StubClient(status_code=200),
@@ -109,7 +109,7 @@ def test_submit_lead_with_formspree_failure() -> None:
             payload=LeadCreate(
                 name="Alex",
                 company="Field Ops",
-                phone="555-0000",
+                phone="(801) 487-1656",
                 details="Need ties.",
             ),
             client=StubClient(status_code=500),

@@ -19,6 +19,8 @@ class Settings(BaseSettings):
 
     app_name: str = "For Shor"
     owner_email: str = "owner@forshor.local"
+    company_phone_display: str = "(801) 487-1656"
+    company_phone_href: str = "tel:+18014871656"
     formspree_endpoint: str = ""
     gallery_directory: str = "src/forshor/static/images/gallery"
     environment: str = "development"

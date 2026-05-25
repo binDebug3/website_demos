@@ -11,13 +11,13 @@
         </p>
         <div class="hero-actions hero-seq hero-seq-4">
             <a class="cta-primary" href="#quote">Request a Quote</a>
-            <a class="cta-ghost" href="tel:+18015550100">Call Now</a>
+            <a class="cta-ghost" href="{{ company_phone_href }}">Call Now</a>
         </div>
     </div>
     <div class="hero-stat-card float-card">
         <h2>Customer Priority Promise</h2>
         <p>Rapid response. Practical recommendations. Honest timelines.</p>
-        <a class="cta-inline" href="tel:+18015550100">Call Dispatch Team</a>
+        <a class="cta-inline" href="{{ company_phone_href }}">Call Dispatch Team</a>
     </div>
 </section>
 
@@ -90,7 +90,7 @@
         {% endfor %}
     </div>
     <div class="section-actions">
-        <a class="cta-inline" href="tel:+18015550100">Call About Similar Projects</a>
+        <a class="cta-inline" href="{{ company_phone_href }}">Call About Similar Projects</a>
     </div>
     {% else %}
     <p class="gallery-empty">
@@ -107,7 +107,7 @@
             Share what you need and we will reach out quickly.
             No unnecessary fields, no friction.
         </p>
-        <a class="cta-inline" href="tel:+18015550100">Need It Fast? Call Now</a>
+        <a class="cta-inline" href="{{ company_phone_href }}">Need It Fast? Call Now</a>
     </div>
     <form class="quote-form" method="post" action="/api/leads/form">
         <label>Name
@@ -126,3 +126,4 @@
     </form>
 </section>
 {% endblock %}
+
