@@ -7,15 +7,15 @@
     <title>{{ app_name }} | {{ page_title }}</title>
     <meta name="description"
         content="For Shor provides concrete forming, shoring, tools, and accessories with customer-first support." />
-    <link rel="stylesheet" href="static/css/site.css" />
+    <link rel="stylesheet" href="/static/css/site.css" />
 </head>
 
 <body>
     <header class="site-header">
         <div class="site-header-inner">
-            <a class="brand-lockup" href="index.html">
+            <a class="brand-lockup" href="/">
                 <span class="brand-logo-slot">
-                    <img class="brand-logo-image" src="static/images/logo-square.png" alt="For Shor logo" />
+                    <img class="brand-logo-image" src="/static/images/logo-square.png" alt="For Shor logo" />
                 </span>
                 <span class="brand-text">
                     <span class="brand-small">Trusted Since 2004</span>
@@ -33,25 +33,25 @@
             </div>
         </div>
         <nav class="main-nav" aria-label="Primary navigation">
-            <a href="index.html">Home</a>
+            <a href="/">Home</a>
             <div class="menu-group">
                 <button class="menu-trigger" type="button">Locations</button>
                 <div class="menu-drop">
-                    <a href="index.html">All Utah Locations</a>
+                    <a href="/locations">All Utah Locations</a>
                     {% for location in locations %}
-                    <a href="index.html">{{ location.city }}, {{ location.state }}</a>
+                    <a href="/locations/{{ location.slug }}">{{ location.city }}, {{ location.state }}</a>
                     {% endfor %}
                 </div>
             </div>
-            <a href="index.html">Products and Equipment</a>
+            <a href="/products">Products and Equipment</a>
             <div class="menu-group">
                 <button class="menu-trigger" type="button">About</button>
                 <div class="menu-drop">
-                    <a href="index.html">Our Company</a>
-                    <a href="index.html">Careers</a>
-                    <a href="index.html">Contact</a>
-                    <a href="index.html">FAQs</a>
-                    <a href="index.html">Locations</a>
+                    <a href="/about">Our Company</a>
+                    <a href="/careers">Careers</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/faqs">FAQs</a>
+                    <a href="/locations">Locations</a>
                 </div>
             </div>
         </nav>
@@ -72,10 +72,10 @@
             </section>
             <section>
                 <h3>Explore</h3>
-                <p><a href="index.html">Home</a></p>
-                <p><a href="index.html">Products and Equipment</a></p>
-                <p><a href="index.html">Locations</a></p>
-                <p><a href="index.html">FAQs</a></p>
+                <p><a href="/">Home</a></p>
+                <p><a href="/products">Products and Equipment</a></p>
+                <p><a href="/locations">Locations</a></p>
+                <p><a href="/faqs">FAQs</a></p>
             </section>
             <section>
                 <h3>Need Immediate Help?</h3>
