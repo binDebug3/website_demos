@@ -11,7 +11,7 @@ FastAPI-based implementation starter for the For Shor website.
 - Server-rendered landing page with stronger brand presentation and animated sections.
 - Quote/contact lead submission forwarded to Formspree (no database, no in-memory lead storage).
 - File-based gallery from local static image files.
-- Expanded API and domain tests with coverage reporting.
+- Expanded API and domain tests with coverage reporting. 
 
 ## Project Structure
 
