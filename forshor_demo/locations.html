@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Shor | Locations</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="brand-lockup" href="index.html">
+                <span class="brand-logo-slot" aria-hidden="true">Logo</span>
+                <span class="brand-text">
+                    <span class="brand-small">Trusted Since 2004</span>
+                    <span class="brand-main">FOR SHOR</span>
+                    <span class="brand-sub">Concrete Forming, Shoring, and Job-Site Equipment</span>
+                </span>
+            </a>
+            <div class="header-controls">
+                <label class="theme-toggle" for="theme-toggle" aria-label="Toggle dark mode">
+                    <span>Dark</span>
+                    <input id="theme-toggle" type="checkbox" />
+                    <span class="slider" aria-hidden="true"></span>
+                </label>
+                <a class="call-pill" href="tel:+18015550100">Call Now: (801) 555-0100</a>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="locations.html">Locations</a>
+            <a href="products.html">Products and Equipment</a>
+            <a href="about.html">About</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+            <a href="faqs.html">FAQs</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-hero motion-surface">
+            <h1>Utah Locations</h1>
+            <p>
+                Every location is focused on fast turnaround and consistent customer care.
+            </p>
+            <a class="cta-inline" href="tel:+18015550100">Call Nearest Location</a>
+        </section>
+
+        <section class="location-grid">
+            <article class="location-card reveal">
+                <h2>Salt Lake City, UT</h2>
+                <p>215 Industrial Way, Salt Lake City, UT 84101</p>
+                <p><a href="tel:+18015551101">(801) 555-1101</a></p>
+                <a class="text-link" href="#slc">View Location Details</a>
+            </article>
+            <article class="location-card reveal delay-1">
+                <h2>Provo, UT</h2>
+                <p>480 Builder Park Rd, Provo, UT 84601</p>
+                <p><a href="tel:+18015551173">(801) 555-1173</a></p>
+                <a class="text-link" href="#provo">View Location Details</a>
+            </article>
+            <article class="location-card reveal delay-2">
+                <h2>Ogden, UT</h2>
+                <p>92 Steel Frame Dr, Ogden, UT 84401</p>
+                <p><a href="tel:+18015551190">(801) 555-1190</a></p>
+                <a class="text-link" href="#ogden">View Location Details</a>
+            </article>
+            <article class="location-card reveal">
+                <h2>St. George, UT</h2>
+                <p>760 Red Rock Industrial, St. George, UT 84770</p>
+                <p><a href="tel:+14355551234">(435) 555-1234</a></p>
+                <a class="text-link" href="#stgeorge">View Location Details</a>
+            </article>
+            <article class="location-card reveal delay-1">
+                <h2>Logan, UT</h2>
+                <p>34 North Yard Lane, Logan, UT 84321</p>
+                <p><a href="tel:+14355551267">(435) 555-1267</a></p>
+                <a class="text-link" href="#logan">View Location Details</a>
+            </article>
+        </section>
+
+        <section class="content-card-grid">
+            <article id="slc" class="content-card">
+                <h2>Salt Lake City Branch</h2>
+                <p>Downtown and valley support with rapid dispatch and practical recommendations.</p>
+            </article>
+            <article id="provo" class="content-card">
+                <h2>Provo Branch</h2>
+                <p>South county coverage with responsive communication and dependable load coordination.</p>
+            </article>
+            <article id="ogden" class="content-card">
+                <h2>Ogden Branch</h2>
+                <p>North corridor support for crews that need consistent site-ready inventory.</p>
+            </article>
+            <article id="stgeorge" class="content-card">
+                <h2>St. George Branch</h2>
+                <p>Desert region service with fast recommendations and practical scheduling support.</p>
+            </article>
+            <article id="logan" class="content-card">
+                <h2>Logan Branch</h2>
+                <p>Northern Utah same-day pull and load coordination for active concrete schedules.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <section>
+                <h3>Contact</h3>
+                <p>For Shor Headquarters</p>
+                <p>215 Industrial Way, Salt Lake City, UT 84101</p>
+                <p><a href="tel:+18015550100">(801) 555-0100</a></p>
+                <p><a href="mailto:info@forshor.com">info@forshor.com</a></p>
+            </section>
+            <section>
+                <h3>Explore</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="products.html">Products and Equipment</a></p>
+                <p><a href="locations.html">Locations</a></p>
+                <p><a href="faqs.html">FAQs</a></p>
+            </section>
+            <section>
+                <h3>Need Immediate Help?</h3>
+                <p>Our team responds fast and cares about your schedule.</p>
+                <a class="cta-inline" href="tel:+18015550100">Call Now</a>
+            </section>
+        </div>
+        <p class="footer-note">Built for contractors who expect reliability.</p>
+    </footer>
+
+    <script>
+        (function () {
+            const toggle = document.getElementById("theme-toggle");
+            if (!toggle) {
+                return;
+            }
+            const storedMode = localStorage.getItem("forshor-theme");
+            if (storedMode === "dark") {
+                document.body.classList.add("dark-mode");
+                toggle.checked = true;
+            }
+            toggle.addEventListener("change", function () {
+                const enabled = toggle.checked;
+                document.body.classList.toggle("dark-mode", enabled);
+                localStorage.setItem("forshor-theme", enabled ? "dark" : "light");
+            });
+        })();
+    </script>
+</body>
+
+</html>

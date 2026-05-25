@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Shor | Our Company</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="brand-lockup" href="index.html">
+                <span class="brand-logo-slot" aria-hidden="true">Logo</span>
+                <span class="brand-text">
+                    <span class="brand-small">Trusted Since 2004</span>
+                    <span class="brand-main">FOR SHOR</span>
+                    <span class="brand-sub">Concrete Forming, Shoring, and Job-Site Equipment</span>
+                </span>
+            </a>
+            <div class="header-controls">
+                <label class="theme-toggle" for="theme-toggle" aria-label="Toggle dark mode">
+                    <span>Dark</span>
+                    <input id="theme-toggle" type="checkbox" />
+                    <span class="slider" aria-hidden="true"></span>
+                </label>
+                <a class="call-pill" href="tel:+18015550100">Call Now: (801) 555-0100</a>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="locations.html">Locations</a>
+            <a href="products.html">Products and Equipment</a>
+            <a href="about.html">About</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+            <a href="faqs.html">FAQs</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-hero motion-surface">
+            <h1>Our Company</h1>
+            <p>
+                For Shor supports concrete contractors with practical recommendations,
+                fast turnaround, and dependable inventory coordination across Utah.
+            </p>
+            <a class="cta-inline" href="contact.html">Contact Team</a>
+        </section>
+
+        <section class="content-card-grid">
+            <article class="content-card reveal">
+                <h2>Our Mission</h2>
+                <p>
+                    Help crews stay on schedule with responsive support and equipment
+                    solutions that perform under pressure.
+                </p>
+            </article>
+            <article class="content-card reveal delay-1">
+                <h2>How We Serve Customers</h2>
+                <p>
+                    We move quickly, communicate clearly, and provide recommendations
+                    that fit real site constraints.
+                </p>
+            </article>
+            <article class="content-card reveal delay-2">
+                <h2>Commitment to Quality</h2>
+                <p>
+                    From planning through delivery, we focus on consistency,
+                    accountability, and long-term customer trust.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <section>
+                <h3>Contact</h3>
+                <p>For Shor Headquarters</p>
+                <p>215 Industrial Way, Salt Lake City, UT 84101</p>
+                <p><a href="tel:+18015550100">(801) 555-0100</a></p>
+                <p><a href="mailto:info@forshor.com">info@forshor.com</a></p>
+            </section>
+            <section>
+                <h3>Explore</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="products.html">Products and Equipment</a></p>
+                <p><a href="locations.html">Locations</a></p>
+                <p><a href="faqs.html">FAQs</a></p>
+            </section>
+            <section>
+                <h3>Need Immediate Help?</h3>
+                <p>Our team responds fast and cares about your schedule.</p>
+                <a class="cta-inline" href="tel:+18015550100">Call Now</a>
+            </section>
+        </div>
+        <p class="footer-note">Built for contractors who expect reliability.</p>
+    </footer>
+
+    <script>
+        (function () {
+            const toggle = document.getElementById("theme-toggle");
+            if (!toggle) {
+                return;
+            }
+            const storedMode = localStorage.getItem("forshor-theme");
+            if (storedMode === "dark") {
+                document.body.classList.add("dark-mode");
+                toggle.checked = true;
+            }
+            toggle.addEventListener("change", function () {
+                const enabled = toggle.checked;
+                document.body.classList.toggle("dark-mode", enabled);
+                localStorage.setItem("forshor-theme", enabled ? "dark" : "light");
+            });
+        })();
+    </script>
+</body>
+
+</html>
